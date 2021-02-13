@@ -1,0 +1,26 @@
+{
+  "name": "entra-na-roda",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm run svg-to-react && next dev",
+    "build": "npm run svg-to-react && next build",
+    "start": "npm run svg-to-react && next start",
+    "export": "npm run svg-to-react && next build && next export",
+    "svg-to-react": "svgr --no-prettier -d src/components/icons src/public/svgs"
+  },
+  "dependencies": {
+    "next": "10.0.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
+  },
+  "devDependencies": {
+    "@svgr/cli": "^5.4.0",
+    "babel-plugin-styled-components": "^1.11.1",
+    "elevator.js": "^1.0.1",
+    "react-elastic-carousel": "^0.9.3",
+    "react-player": "^2.6.2",
+    "styled-components": "^5.2.1",
+    "url-loader": "^4.1.1"
+  }
+}
